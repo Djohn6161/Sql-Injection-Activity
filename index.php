@@ -1,6 +1,3 @@
-<?php
-$result = "";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +9,7 @@ $result = "";
 </head>
 <body>
     <div class="container">
-        <form name="login" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <form name="login" method="POST" action="action.php">
             <div class="loginHeader">
                 <h2>Login</h2>
             </div>
@@ -20,13 +17,13 @@ $result = "";
 
                 <div class="input">
                     <label for="username"> <b>Username:</b></label>  
-                    <input type="text" class="loginInput" placeholder="Enter Username" name="username" required>
+                    <input type="text" class="loginInput" placeholder="Simple Sql Injection" name="username" required>
                 </div>
                 
                 <br>
                 <div class="input">
                     <label for="password"><b>Password:</b></label>
-                    <input type="password" class="loginInput" placeholder="Enter Password" name="password" required>
+                    <input type="text" class="loginInput" placeholder="' or 1=1 -- " name="password" required>
                 </div>
                 
                 <br>
@@ -35,12 +32,6 @@ $result = "";
                 </div>
             </div>
         </form>
-    </div>
-
-    <div class="result">
-        <?php 
-            echo $result;
-        ?>
     </div>
 </body>
 </html>

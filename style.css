@@ -10,7 +10,7 @@
     width: 460px;
     margin: 100px auto;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px;
+    box-shadow: 5px 5px 20px black;
     padding: 20px;
 }
 .loginHeader{
@@ -25,15 +25,29 @@
 
 }
 .loginInput{
-    height: 2rem;
+    height: 3rem;
     margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
 .submit{
     display: flex;
 }
 .loginSubmit{
-    padding: 12px 16px;
+    padding: 10px 12px;
     font-size: 1.2rem;
     margin-left: auto;
     border-radius: 15px;
+}
+.result{
+    max-width: 60%;
+    margin: 100px auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px black;
+    padding: 20px;
+    text-align: center;
+}
+.result a:link{
+    text-decoration: none;
+    font-size: 5rem;
 }
